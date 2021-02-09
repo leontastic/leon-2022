@@ -4,8 +4,19 @@
   "description": "Leon's personal website",
   "main": "index.js",
   "scripts": {
+    "build": "esbuild ./src --define:process.env.NODE_ENV=\\\"production\\\" --bundle --outdir=./dist",
+    "dev": "esbuild ./src --define:process.env.NODE_ENV=\\\"development\\\" --bundle --outdir=./dist --watch",
+    "serve": "http-server --port 9090 --proxy http://localhost:9090?",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Leon Li <la2li@uwaterloo.ca>",
-  "license": "UNLICENSED"
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "esbuild": "^0.8.43",
+    "http-server": "^0.12.3"
+  },
+  "dependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  }
 }
