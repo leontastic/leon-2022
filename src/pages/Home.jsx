@@ -1,5 +1,7 @@
 import { Github, Linkedin } from '@icons-pack/react-simple-icons'
 import React from 'react'
+import Block from '../components/Block'
+import Section from '../components/Section'
 import TextFlipper from '../components/TextFlipper'
 
 const disciplines = [
@@ -14,16 +16,6 @@ const disciplines = [
   'Cloud infrastructure',
   'Test automation',
 ]
-
-const Section = ({ children }) => (
-  <div style={{ padding: '1em 2em' }}>{children}</div>
-)
-
-const Block = ({ children, style = {}, ...props }) => (
-  <div style={{ margin: '1em', ...style }} {...props}>
-    {children}
-  </div>
-)
 
 const Home = () => {
   return (
