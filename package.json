@@ -17,9 +17,11 @@
   },
   "dependencies": {
     "@icons-pack/react-simple-icons": "^4.0.0",
+    "luxon": "^1.26.0",
     "modern-css-reset": "^1.4.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-router-dom": "^5.2.0",
     "webfontloader": "^1.6.28"
   }
 }

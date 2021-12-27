@@ -1,0 +1,12 @@
+.icon-link {
+  display: inline-flex;
+  align-items: center;
+}
+
+.icon-link:hover > .icon-link-icon {
+  text-decoration: none;
+}
+
+.icon-link-icon {
+  display: flex;
+}

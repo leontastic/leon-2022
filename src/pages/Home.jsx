@@ -1,17 +1,19 @@
 import { Github, Linkedin } from '@icons-pack/react-simple-icons'
 import React from 'react'
+import { Link } from 'react-router-dom'
 import Block from '../components/Block'
+import IconLink from '../components/IconLink'
 import Section from '../components/Section'
 import TextFlipper from '../components/TextFlipper'
 
 const disciplines = [
   'Full-stack',
   'JavaScript',
+  'Node.js',
   'TypeScript',
   'Front-end',
   'Back-end',
   'React',
-  'Node.js',
   'AWS',
   'Cloud infrastructure',
   'Test automation',
@@ -20,13 +22,6 @@ const disciplines = [
 const Home = () => {
   return (
     <>
-      <Section>
-        <Block>
-          <h1>
-            <span style={{ whiteSpace: 'nowrap' }}>Leon Li</span> 👨🏻‍🔧
-          </h1>
-        </Block>
-      </Section>
       <Section>
         <Block>
           <h2>
@@ -38,18 +33,27 @@ const Home = () => {
       </Section>
       <Section>
         <Block>
-          <span style={{ fontSize: 24 }}>🚀</span>
-          <span style={{ margin: '0 1em', fontSize: 24 }}>Résumé</span>
+          <IconLink icon="🚀" to="/resume">
+            Résumé
+          </IconLink>
         </Block>
       </Section>
       <Section>
         <Block style={{ display: 'flex', alignItems: 'center' }}>
-          <Github color="#181717" size={24} />
-          <span style={{ margin: '0 1em', fontSize: 24 }}>Github</span>
+          <IconLink
+            icon={<Github color="#181717" size="1em" />}
+            href="//github.com/leontastic"
+          >
+            Github
+          </IconLink>
         </Block>
         <Block style={{ display: 'flex', alignItems: 'center' }}>
-          <Linkedin color="#0077B5" size={24} />
-          <span style={{ margin: '0 1em', fontSize: 24 }}>LinkedIn</span>
+          <IconLink
+            icon={<Linkedin color="#0077B5" size="1em" />}
+            href="//linkedin.com/in/leon-a-li/"
+          >
+            LinkedIn
+          </IconLink>
         </Block>
       </Section>
     </>

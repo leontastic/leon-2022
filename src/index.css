@@ -26,3 +26,17 @@ h2 {
 h3 {
   font-size: 1.5rem;
 }
+
+a {
+  color: inherit;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+a:hover > * {
+  text-decoration: underline;
+}
+
+ul {
+  font-size: 1.5rem;
+}
