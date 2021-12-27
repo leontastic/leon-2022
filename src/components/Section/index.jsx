@@ -1,7 +1,8 @@
 import React from 'react'
+import './index.css'
 
 const Section = ({ children }) => (
-  <div style={{ padding: '1em 2em' }}>{children}</div>
+  <div className="section">{children}</div>
 )
 
 export default Section

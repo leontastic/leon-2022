@@ -1,7 +1,8 @@
 import React from 'react'
+import './index.css'
 
 const Block = ({ children, style = {}, ...props }) => (
-  <div style={{ margin: '1em', ...style }} {...props}>
+  <div className="block" {...props}>
     {children}
   </div>
 )
