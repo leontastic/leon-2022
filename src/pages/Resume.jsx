@@ -33,7 +33,7 @@ const Resume = () => {
       </Section>
       <Section>
         <Block>
-          <IconLink icon="💾" to="/static/Leon Li Resume Jan 2022.pdf">
+          <IconLink icon="💾" href="/static/Leon Li Resume Jan 2022.pdf">
             Click here to download (PDF)
           </IconLink>
         </Block>
