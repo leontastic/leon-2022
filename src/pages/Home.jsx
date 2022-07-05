@@ -56,6 +56,17 @@ const Home = () => {
           </IconLink>
         </Block>
       </Section>
+      <Section>
+        <Block>
+          <IconLink icon="🏓" href="/experiments/pong/">
+            Pong
+          </IconLink>
+          &nbsp;
+          <a href='//github.com/leontastic/pong-react-redux'>
+            (<span>source</span>)
+          </a>
+        </Block>
+      </Section>
     </>
   )
 }
